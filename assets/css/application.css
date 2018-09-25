@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+* a {
+    color: black;
+    text-decoration: none
+}
+
+* a:hover {
+    text-decoration: underline
+}
+
+.container {
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em 2em 2em
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.5em
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2em
+}
+
+.push-right {
+    float: right
+}
+
+a.button {
+    font-weight: 500;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin-top: 1em;
+    font-size: 28px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold
+}
+
+a.button:hover {
+    background-color: #0D0C0C;
+    color: #ebebeb
+}
+
+.notice-box {
+    color: #555;
+    border-radius: 10px;
+    font-family: Tahoma, Geneva, Arial, sans-serif;
+    font-size: 11px;
+    padding: 10px 36px;
+    margin: 10px;
+    background: #e9ffd9;
+    border: 1px solid #a6ca8a;
+    position: fixed
+}
+
+header {
+    top: 0;
+    background-color: #F7C30F
+}
+
+header .container {
+    min-height: 720px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../images/Bartosz.jpg)
+}
+
+header .container p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%
+}
+
+header .container p:last-child {
+    margin-right: 0
+}
+
+header .container nav {
+    float: right;
+    padding-top: 2em
+}
+
+header .container nav ul {
+    list-style: none
+}
+
+header .container nav ul li {
+    display: inline;
+    font-size: 1.4em;
+    margin-right: 3em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold
+}
+
+header .container nav ul li:last-child {
+    margin-right: 0
+}
+
+header .container nav ul li a {
+    text-decoration: none;
+    color: #0D0C0C
+}
+
+header .container nav ul li a:hover {
+    border-bottom: 4px solid #0D0C0C;
+    padding-bottom: 5px
+}
+
+header .container .banner {
+    padding-top: 5em;
+    max-width: 9em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.8em;
+    font-weight: bold
+}
+
+header .container .banner .button:hover {
+    color: #F7C30F
+}
+
+#about {
+    text-align: justify
+}
+
+#about p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%
+}
+
+#about p:last-child {
+    margin-right: 0
+}
+
+#about .yellow-triangle {
+    width: 50px;
+    border-style: solid;
+    border-width: 50px 45px 0 45px;
+    border-color: #F7C30F transparent transparent transparent;
+    float: right
+}
+
+#about .yellow-triangle .button {
+    font-size: 1em
+}
+
+#projects {
+    background-color: #F7C30F
+}
+
+#projects h1 {
+    padding-top: 1em
+}
+
+#projects .portfolio {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    cursor: pointer;
+}
+
+#projects .portfolio:last-child {
+    margin-right: 0
+}
+
+#projects .portfolio .select {
+    width: 30%;
+    height: 200px;
+    background: black;
+    color: #F7C30F;
+    float: left;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#projects .portfolio .select img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#projects .portfolio .select:last-of-type {
+    margin-right: 0
+}
+
+#projects .portfolio .select h1 {
+    color: #F7C30F;
+    font-size: 2em;
+    margin-left: 1em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold
+}
+
+#projects .portfolio .select h3 {
+    margin-left: 1em
+}
+
+#projects .portfolio .desciption {
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2em;
+    display: inline-block
+}
+
+#projects .portfolio .desciption::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+#projects .portfolio .desciption .icon {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%
+}
+
+#projects .portfolio .desciption .icon:last-child {
+    margin-right: 0
+}
+
+#projects .portfolio .desciption .text {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+    padding-left: 1em;
+    margin-top: 0.5em;
+    display: none
+}
+
+#projects .portfolio .desciption .text:last-child {
+    margin-right: 0
+}
+
+#projects .portfolio .desciption .text p {
+    margin-top: 1em
+}
+
+#reference {
+    margin-top: 2em
+}
+
+#reference .quote {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%
+}
+
+#reference .quote:last-child {
+    margin-right: 0
+}
+
+#reference .quote p {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    margin-top: 1em
+}
+
+#reference .quote .signature {
+    float: right;
+    font-size: 1.3em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-style: normal
+}
+
+#contact {
+    background-color: #F7C30F;
+    background-image: url(../images/arm.jpg);
+    background-position: 115% 5%;
+    background-repeat: no-repeat
+}
+
+#contact p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.4em
+}
+
+#contact .form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%
+}
+
+#contact .form:last-child {
+    margin-right: 0
+}
+
+#contact .form input,#contact .form textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.4em
+}
+
+#contact .form .input {
+    padding-top: 10px
+}
+
+#contact .form .btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #0D0C0C;
+    font-size: 26px;
+    padding: 5px 20px;
+    border: solid #000000 5px;
+    text-decoration: none;
+    width: 6em;
+    background-color: #F7C30F;
+    font-weight: bold;
+    margin-top: 0.3em
+}
+
+#contact .form .btn:hover {
+    color: #F7C30F;
+    background-color: #0D0C0C
+}
+
+form:after {
+  content: '';
+  left: 3px;
+  top: 3px;
+  right: 3px;
+  font-size: 15px;
+  padding: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: -100px;
+  transition: all .3s;
+}
+form.emailjs-success:after,
+form.emailjs-sending:after,
+form.emailjs-error:after {
+  margin-top: 0;
+  transition: all .3s;
+}
+form.emailjs-sending:after {
+  content: 'Sending email...';
+}
+form.emailjs-success:after {
+  content: 'Email sent!';
+  color: #1B5E20;
+}
+form.emailjs-error:after {
+  content: 'Error sending email';
+  color: #B71C1C;
+}
+
+#contact .get_in_touch {
+    padding-top: 15em;
+    padding-left: 2em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%
+}
+
+#contact .get_in_touch:last-child {
+    margin-right: 0
+}
+
+#contact .get_in_touch .social {
+    height: 87px;
+    width: 87px;
+    float: left;
+    margin-right: 1em;
+    margin-top: 1em
+}
+
+#contact .get_in_touch .facebook {
+    background-image: url(../images/facebook.png)
+}
+
+#contact .get_in_touch .facebook:hover {
+    background-image: url(../images/facebook_hover.png)
+}
+
+#contact .get_in_touch .github {
+    background-image: url(../images/github.png)
+}
+
+#contact .get_in_touch .github:hover {
+    background-image: url(../images/github_hover.png)
+}
+
+#contact .get_in_touch .linkedin {
+    background-image: url(../images/linkedin.png)
+}
+
+#contact .get_in_touch .linkedin:hover {
+    background-image: url(../images/linkedin_hover.png)
+}
+
+#map {
+    background-color: #F7C30F
+}
+
+#map img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+footer {
+    background-color: #F7C30F
+}
+
+footer .copyrights {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    padding-top: 2em
+}
+
+footer .copyrights .design {
+    float: right
+}
+
+footer .copyrights .design .design_by {
+    float: left
+}
+
+footer .copyrights .design .logo {
+    float: left;
+    margin-top: 1px;
+    margin-left: 5px
+}

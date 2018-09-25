@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bartfolio</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/application.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+</head>
+<body>
+  <header>
+    <div class='container'>
+      <nav>
+        <ul>
+          <li>
+            <a href='#about'>about</a>
+          </li>
+          <li>
+            <a href='#projects'>projects</a>
+          </li>
+          <li>
+            <a href='#contact'>contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class='banner'>
+        Hello,
+        <br>I'm Bartosz Fijałkowski, Ruby on Rails and new techs enthusiast.</br>
+        <a class='button' href='#about'>
+          hire me
+        </a>
+      </div>
+    </div>
+  </header>
+  <section id='about'>
+    <div class='container'>
+      <div class='yellow-triangle'></div>
+      <br>
+      <h1>About</h1>
+      <p>
+        Flexible and goal-oriented freelancer at the moment. Administrator and IT specialist by profession. What really makes me tick is Ruby and that simple thought of making complicated things (so much!) easier. That's why I became Ruby on Rails developer.
+        <br>
+        <br>
+        I graduated from Katowice Institute of Information Technologies in 2014 and launched my very first Ruby project while still in college.
+      </p>
+      <p>
+        Later on bartCRM, the friendly customer relations management system, came into being. I choose Ruby over PHP, back-end over front-end and interesting projects over well-paid ones.
+        <br>
+        <br>
+        After hours I spend my time racing in Gran Turismo (also as a member of Poland24 Racing crew), karting, cruising and trying cuisines of the world (both ways, eating and cooking).
+        <br>
+        <a class='button' href='en_Bartosz_Fijalkowski_CV.pdf'>CV</a>
+      </p>
+    </div>
+  </section>
+  <section id='projects'>
+    <div class='container'>
+      <h1>Projects</h1>
+      <div class='portfolio'>
+        <div class='select' id='bartcrm'>
+          <img src="assets/images/bartCRM_logo.png" alt="Bartcrm logo" />
+        </div>
+        <div class='select' id='bartcam'>
+          <img src="assets/images/bartcam_logo.png" alt="Bartcam logo" />
+        </div>
+        <div class='select' id='bartfolio'>
+          <img src="assets/images/bartfolio.jpg" alt="Bartfolio" />
+        </div>
+      </div>
+      <div class='portfolio'>
+        <div class='desciption'>
+          <div class='icon'>
+            <i class='fa fa-github fa-4x'></i>
+          </div>
+          <div class='text is-open' id='bartcrm-desc' style='display: block'>
+            <h2><a href="https://github.com/brateq/BartCRM">github.com/brateq/BartCRM</a></h2>
+            <p>BartCRM is a friendly customer relations management system for a small companies.</p>
+            <p>Build with Rails 4 with Postgresql, Bootstrap 3, Ransack and many more great gems.</p>
+          </div>
+          <div class='text' id='bartcam-desc'>
+            <h2><a href="https://github.com/brateq/BartCAM">github.com/brateq/BartCAM</a></h2>
+            <p>My first project in Rails and also my engineering thesis app.</p>
+            <p>BartCAM is a VSaaS system dedicated to small companies and private users, write on Ruby in Rails 4.</p>
+          </div>
+          <div class='text' id='bartfolio-desc'>
+            <h2><a href="https://github.com/brateq/bartfolio">github.com/brateq/bartfolio</a></h2>
+            <p>My first portfolio, build in collaboration with the Barbara Kujawska.</p>
+            <p>Build with Rails 4, Bourbon, Neat and a little of jQuery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id='reference'>
+    <div class='container'>
+      <div class='quote'>
+        <p>
+          Is there a solution? No.
+          <br>Is he able to find it anyway? Of course he is!</br>
+        </p>
+        <p>
+          Trust me when I say that you CAN count on his ingenuity, honest willingness to help and that extremely positive attitude
+        </p>
+        <p class='signature'>Barbara Kujawska</p>
+      </div>
+    </div>
+  </section>
+  <section id='contact'>
+    <div class='container'>
+      <div class='form'>
+        <h1>Contact</h1>
+        <p>Fill the contact form below with your name, email, message and press the magic button:</p>
+        <form id="myform" onsubmit="emailjs.sendForm('default_service', 'template_XQAPamie', this); return false;" method="post">
+          <div class="input string optional message_name">
+            <input placeholder="Your name" type="text" name="from_name" />
+          </div>
+
+          <div class="input email optional message_email">
+            <input placeholder="Your email" type="email" name="reply_to" />
+          </div>
+
+          <div class="input text optional message_message">
+            <textarea rows="5" cols="50" placeholder="Your message" name="message_html"></textarea>
+          </div>
+          <input type="submit" name="commit" value="hire me" class="btn" />
+        </form>
+      </div>
+      <div class='get_in_touch'>
+        <p>Get in touch by email:</p>
+        <p><a href="mailto:Bartosz.Fijalkowski@outlook.com">Bartosz.Fijalkowski@outlook.com</a></p>
+        <br>
+        <br>
+        <p>Or learn more about me here:</p>
+        <a href="https://github.com/brateq"><div class='social github'></div>
+        </a><a href="https://www.linkedin.com/in/brateq"><div class='social linkedin'></div>
+      </a><a href="https://www.facebook.com/brateq"><div class='social facebook'></div>
+    </a></div>
+  </div>
+</section>
+<section id='map'>
+  <iframe frameborder='0' height='500' src='https://www.google.com/maps/embed/v1/search?q=Chorz%C3%B3w&amp;key=AIzaSyDggn2664z856_Je3imQunatVH_kYFXr3U' style='border:0; pointer-events:none' width='100%'></iframe>
+</section>
+<footer>
+  <div class='container'>
+    <div class='copyrights'>
+      &copy; Bartosz Fijałkowski
+      <div class='design'>
+        <div class='design_by'>
+          Design by
+        </div>
+        <div class='logo'>
+          <a href="https://www.linkedin.com/in/kujawska"><img src="assets/images/logo_kujawska.png" alt="Logo kujawska" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/application.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_ntKT9uvb1uEJPwO84N5OY");
+   })();
+</script>
+</body>
+</html>
